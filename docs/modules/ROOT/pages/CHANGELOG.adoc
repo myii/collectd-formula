@@ -1,0 +1,139 @@
+= Changelog
+
+:sectnums!:
+
+== link:++https://github.com/saltstack-formulas/collectd-formula/compare/v1.1.3...v1.1.4++[1.1.4^] (2020-12-16)
+
+=== Bug Fixes
+
+* *release.config.js:* use full commit hash in commit link [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/8b108b5e8dd8de88a98d342493820bd04f5c4e84[8b108b5^])
+
+=== Continuous Integration
+
+* *gemfile:* restrict `train` gem version until upstream fix [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/18b26ab21d946703f4cf06b248a3468932293054[18b26ab^])
+* *gemfile.lock:* add to repo with updated `Gemfile` [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/ab3add7671fc7ce707eaaa3aa3ca1ef3d546140c[ab3add7^])
+* *gitlab-ci:* use GitLab CI as Travis CI replacement
+(https://github.com/saltstack-formulas/collectd-formula/commit/572e73c12142c0df85f1f6dcf9e6886f2bb5b468[572e73c^])
+* *kitchen:* avoid using bootstrap for `master` instances [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/bca1b99c3371f00e81901ddc514db86fbeb60d46[bca1b99^])
+* *kitchen:* use `debian-10-master-py3` instead of `develop` [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/7ed27017c6c28c7b64540c86c3bab721825a03e6[7ed2701^])
+* *kitchen:* use `develop` image until `master` is ready (`amazonlinux`)
+ [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/c36843c1b4efec35646b0d08aaebc41c02a5ed38[c36843c^])
+* *kitchen:* use `saltimages` Docker Hub where available [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/071343b57c752fb2f5f7026f55a4a70bafd9b36a[071343b^])
+* *kitchen+travis:* remove `master-py2-arch-base-latest` [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/9814be5d2bc7c68adbd9967261bfab64425ac041[9814be5^])
+* *kitchen+travis:* upgrade matrix after `2019.2.2` release [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/a147c9de11f40248134b41aed25938be9f6e0394[a147c9d^])
+* *pre-commit:* add to formula [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/5f80569c71ee2ee543e57bf70c2557e59e005ca3[5f80569^])
+* *pre-commit:* enable/disable `rstcheck` as relevant [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/88ed018f99c1d185f8d642db8ffc6c4420cbbd42[88ed018^])
+* *pre-commit:* finalise `rstcheck` configuration [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/938b8ed04fc21712470b7f756d99e9d1d27c2dea[938b8ed^])
+* *travis:* add notifications => zulip [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/3558a403e96186f5e0df8a36f1c762c6f2b32a67[3558a40^])
+* *travis:* apply changes from build config validation [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/2cb275198b7e5040db442e3173f54868cf44779f[2cb2751^])
+* *travis:* opt-in to `dpl v2` to complete build config validation [skip
+ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/17ccf35c40e6f4039d3f320403832ee56c1f12fa[17ccf35^])
+* *travis:* quote pathspecs used with `git ls-files` [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/2c9ef3ebb351606d90e89419b3eb0a59658c07e3[2c9ef3e^])
+* *travis:* run `shellcheck` during lint job [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/310c19fd41213496816db47af7c1c16257d5f938[310c19f^])
+* *travis:* update `salt-lint` config for `v0.0.10` [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/a351fd3f32f12524cb6c6e318adcac5d71a1879a[a351fd3^])
+* *travis:* use `major.minor` for `semantic-release` version [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/32b8c3302c94f7755d5df8457f88308ea101feda[32b8c33^])
+* *travis:* use build config validation (beta) [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/e55fc616a255636b7e9531d4fc2e87ec7af599b7[e55fc61^])
+* *workflows/commitlint:* add to repo [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/c71e7b364d979be8ef4734441b372d0e9b2dd9fd[c71e7b3^])
+
+=== Documentation
+
+* *contributing:* remove to use org-level file instead [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/3ce31da191632c63686db4d8ee2e669e672b10aa[3ce31da^])
+* *readme:* update link to `CONTRIBUTING` [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/f23ed2431d69d1049ee9527f8511bd0d9f6f2c1d[f23ed24^])
+
+=== Performance Improvements
+
+* *travis:* improve `salt-lint` invocation [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/c583ff47c48a1daa330393867f56f51dfe084205[c583ff4^])
+
+== link:++https://github.com/saltstack-formulas/collectd-formula/compare/v1.1.2...v1.1.3++[1.1.3^] (2019-10-11)
+
+=== Bug Fixes
+
+* *rubocop:* add fixes using `rubocop --safe-auto-correct`
+(https://github.com/saltstack-formulas/collectd-formula/commit/9eba083[9eba083^])
+
+=== Continuous Integration
+
+* merge travis matrix, add `salt-lint` & `rubocop` to `lint` job
+(https://github.com/saltstack-formulas/collectd-formula/commit/f8e5542[f8e5542^])
+* *travis:* merge `rubocop` linter into main `lint` job
+(https://github.com/saltstack-formulas/collectd-formula/commit/a95ec51[a95ec51^])
+
+== link:++https://github.com/saltstack-formulas/collectd-formula/compare/v1.1.1...v1.1.2++[1.1.2^] (2019-10-09)
+
+=== Bug Fixes
+
+* *map.jinja:* fix `salt-lint` errors
+(https://github.com/saltstack-formulas/collectd-formula/commit/29f03c5[29f03c5^])
+* *network.sls:* fix `salt-lint` errors
+(https://github.com/saltstack-formulas/collectd-formula/commit/bdd244b[bdd244b^])
+
+=== Continuous Integration
+
+* *kitchen:* change `log_level` to `debug` instead of `info`
+(https://github.com/saltstack-formulas/collectd-formula/commit/3d0009a[3d0009a^])
+* *kitchen:* install required packages to bootstrapped `opensuse` [skip
+ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/c1ae589[c1ae589^])
+* *kitchen:* use bootstrapped `opensuse` images until `2019.2.2` [skip
+ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/aed6fff[aed6fff^])
+* *kitchen+travis:* replace EOL pre-salted images
+(https://github.com/saltstack-formulas/collectd-formula/commit/9f67565[9f67565^])
+* *platform:* add `arch-base-latest` (commented out for now) [skip ci]
+(https://github.com/saltstack-formulas/collectd-formula/commit/5923a2e[5923a2e^])
+* *yamllint:* add rule `empty-values` & use new `yaml-files` setting
+(https://github.com/saltstack-formulas/collectd-formula/commit/768a78e[768a78e^])
+* merge travis matrix, add `salt-lint` & `rubocop` to `lint` job
+(https://github.com/saltstack-formulas/collectd-formula/commit/0e2bd15[0e2bd15^])
+* use `dist: bionic` & apply `opensuse-leap-15` SCP error workaround
+(https://github.com/saltstack-formulas/collectd-formula/commit/505054d[505054d^])
+
+== link:++https://github.com/saltstack-formulas/collectd-formula/compare/v1.1.0...v1.1.1++[1.1.1^] (2019-08-23)
+
+=== Bug Fixes
+
+* change iteritems to items to be Py3 compatible
+(https://github.com/saltstack-formulas/collectd-formula/commit/e7cc023[e7cc023^])
+
+== link:++https://github.com/saltstack-formulas/collectd-formula/compare/v1.0.1...v1.1.0++[1.1.0^] (2019-08-10)
+
+=== Continuous Integration
+
+* *kitchen+travis:* modify matrix to include `develop` platform
+(https://github.com/saltstack-formulas/collectd-formula/commit/793b952[793b952^])
+
+=== Features
+
+* *yamllint:* include for this repo and apply rules throughout
+(https://github.com/saltstack-formulas/collectd-formula/commit/31883ff[31883ff^])
+
+== link:++https://github.com/saltstack-formulas/collectd-formula/compare/v1.0.0...v1.0.1++[1.0.1^] (2019-04-24)
+
+=== Documentation
+
+* *semantic-release:* implement an automated changelog
+(https://github.com/saltstack-formulas/collectd-formula/commit/54618f7[54618f7^])
